@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "R_ice": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7077",
+      "launchBrowser": false
+    }
+  }
+}
