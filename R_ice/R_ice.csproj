@@ -29,4 +29,9 @@
   <ItemGroup>
     <Using Include="System.Threading.ExecutionContext" Alias="ExecutionContext" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Services\Controller\" />
+    <Folder Include="Services\Model\" />
+    <Folder Include="Services\View\" />
+  </ItemGroup>
 </Project>
