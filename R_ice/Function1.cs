@@ -20,7 +20,7 @@ public class Function1
         _tableStorageService = tableStorageService;
     }
 
-    [Function("sendMe")]
+    [Function(nameof(sendMe))]
     public async Task sendMe ([HttpTrigger(AuthorizationLevel.Anonymous, "get", "post")] HttpRequest req)
     {
         _logger.LogInformation("C# HTTP trigger function processed a request.");
@@ -30,5 +30,16 @@ public class Function1
 
         }
     }
+    [Function(nameof(receiveMe))]
+    public async Task receiveMe([HttpTrigger(AuthorizationLevel.Anonymous, "get", "post")] HttpRequest req)
+    {
+        _logger.LogInformation("C# HTTP trigger function processed a request.");
+
+        try
+        {
+
+        }
+    }
+
 }
 
